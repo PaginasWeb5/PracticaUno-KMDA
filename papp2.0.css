@@ -1,0 +1,79 @@
+
+#Head{
+    color: bisque;
+    text-align: center;
+    padding: 20px;
+    background-image: url(Image.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    background-color:lightgoldenrodyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+/*
+div#HTML{
+    float: left;
+    position: absolute;
+    width: 45%;
+    padding: 20px;
+}
+
+div#CSS{
+    float: right;
+    position: absolute;
+    width: 45%;
+    padding: 20px;
+}*/
+
+#tabla{
+    border-collapse: collapse;
+    width: 90%;
+    
+}
+table th,td,tr{
+    border: 3px solid green;
+    background-color: rgb(207, 61, 61);
+    color: bisque;
+}
+
+section#S1{
+    float: left;
+    width: 49%;
+}
+section#S2{
+    float: right;
+    width: 49%;
+}
+
+section#Sint{
+    text-align: center;
+    padding: 20px;
+}
+ section#form{
+     width: 40%;
+     align-items: center;
+ }
+ .a{
+     color: brown;
+     font-size: 20px;
+ }
+
+ h3, h2{
+    text-align: center;
+ }
+
+ .galeria{
+
+ }
+
+ body{
+     background-image: url(Img.fondo.jpg);
+    background-attachment: fixed;    
+ }
+
+ #gradient{
+     background: linear-gradient(blue,brown);
+
+ }
+ 
