@@ -1,0 +1,191 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="papp2.0.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <div id="Head">
+    <b>
+        <h1>HTML & CSS</h1>
+    </b>
+    </div>
+
+    <br>
+    <section id="Sint">
+        <h2>Sintaxis & Reglas</h2>
+        <p>Para poder empezar a realizar un código es importante saber las partes en la que se componen. Primero se analiza la primera parte.</p>
+        <br>
+        <img src="2018-02-14 (4).png" alt="" align=center>
+        <p>Una vez creado el archivo se escribe DOCTYPE donde aparecera todo lo que aparece en la imagen. </p>
+        <ul>
+            <li>DODCTYPE.- La función de DOCTYPE es especificarque tipo de lenguaje se va a utilizar en el documento.</li>
+            <li>HEAD.- Puede contener otros tags de HTML que brindan información como el titulo, descripción, palabras clave, etc.</li>
+            <li>TITLE.- Es utilizado para declarar el nombre del documento HTML.</li>
+            <li>META.- Se usa para declarar metada.Puede incluir descripción, palabras clave, etc. También para hacer refresh y agregar cookies.</li>
+            <li>SCRIPT.- Se usa para declarar el script (como JavaScript) dentro del documento HTML.</li>
+            <li>LINK.- Es usado para definir un link de una fuente externa.</li>
+        </ul>
+        <p>Para insertar diseños mediante una ventana CSS, la línea 9 en href simplemente se escribe el nombre de la ventana CSS para que
+            directamente desde la otra ventana se actualicen los cambios.
+        </p>
+    </section>
+
+<section id="S1">
+    <div class="Html" float=left>
+        <h2>HTML</h2>
+        <p>HTML (HyperText Markup Language) es el lenguaje para paginas web. Te permite crear una pagina web, agregar contenido y colocarlo en 
+            donde tu quieras.(casi todo alguno depende más de css). Los tags en Html tiene un significado literal de las palabras
+            por lo que no es muy dificil averiguar su función.</p>
+        <p>En esta tabla mostrare un poco de las etiquetas y elementos que hay en HTML, estos pueden tener tag de comienzo y de final <i>(abre y cierra).</i>
+            </p>
+        <table id="tabla" align=center>
+            <thead>
+                <b>
+                    <th>Elemento</th>
+                    <th>Descripción</th>
+                </b>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>h1</td>
+                    <td>Este elemento funciona para hacer titulos, va de h1 hasta h6.</td>
+                </tr>
+                <tr>
+                    <td>p</td>
+                    <td>Este elemento como el nombre lo dice agrega un parrafo a la página.</td>
+                </tr>
+                <tr>
+                    <td>br</td>
+                    <td>Este elemento no tiene cierre, pero su función es hacer un salto de línea</td>
+                </tr>
+                <tr>
+                    <td>b / strong</td>
+                    <td>Sus funciones son las misma y hacen que la letra sea en <b> negritas.</b></td>
+                </tr>
+                <tr>
+                    <td>i / em</td>
+                    <td>Sus funciones son las mismas y lo que hacen es convertir la letra en un estilo <em>cursiva</em></td>
+                </tr>
+                <tr>
+                    <td>mark</td>
+                    <td>Su función es <mark>subrayar</mark> la palabra como si fuera marcatexto.</td>
+                </tr>
+                <tr>
+                    <td>small</td>
+                    <td>Su función es hacer la letra <small>pequeña</small> cuando se encuentra entre los tags.</td>
+                </tr>
+                <tr>
+                    <td>del</td>
+                    <td>Esta etiqueta <del>elimina indirectamente</del> lo que se quiere decir.</td>
+                </tr>
+                <tr>
+                    <td>ins</td>
+                    <td>Esta etiqueta <ins>subraya el texto</ins> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="S2">
+    <div class="CSS" float=right>
+        <h2>CSS</h2>
+        <p>CSS (Cascading Style Sheets) este modo es el encargado de, como dice el nombre, dar el estilo a la página, puede dar desde color
+        situar la posición de las cosas <i>(imagenes o texto)</i>, hasta hacer una pequeña animación.</p>
+        <p>La sintaxis para agregar estilo a la pagina es muy sencillo ya que simplemente tienes que escribir lo que quieres modificar,
+            pero esto se basa por modulos. Aquí una imagen de como sería la sintaxis:
+        </p>
+        <img src="selector.gif" alt="sintaxis">
+        <ul>
+            <li>Se selecciona el punto de HTML que se quiere modificar.</li>
+            <li>Los bloques contienen una o más declaraciones separadas por semicolumnas.</li>
+            <li>Cada declaración incluye una propiedad, nombre y valor separada por columnas.</li>
+            <li>La declaración termina con una semi columna, y el bloque de la declaración está rodeado por llaves.</li>
+        </ul>
+        <p>Existen muchas propiedad y elementos tanto en HTML y CSS algunas son iguales y otras no, pero si sabes para que funcionan 
+            no habra problema.
+        </p>
+    </div>
+</section>
+
+<br>
+    <section id="form">
+            <form action="enviar.php" method="post">
+                    <fieldset>
+                          <legend><b><i> Formulario </i></b></legend>
+                          <b><label for="nombre">Nombre</label></b>
+                          <input type="text" value="hola" id="" readonly>
+                          <input placeholder="escribe tu nombre aquí" id="nombre" type="text">
+                          <br>
+                          <b><label for="Combo">Combobox</label></b>
+                              <select name="" id="">
+                                  <option value="uno"></option>
+                                  <option value="#fff"></option>
+                              </select>
+                          <br>
+                          <b><label for="nacimiento">Fecha Nacimiento</label></b>
+                          <input type="date" name="" id="nacimiento">
+                          <br>
+                          <b><label for="correo">checkbox</label></b>
+                          <input type="checkbox" name="">
+                          <br>
+                          <b><label for="radio">gender</label></b>
+                          <input type="radio" name="gender" id="female">
+                          <input type="radio" name="gender" id="male">
+                          <br>
+                          <b><label for="file">file</label></b>
+                          <input type="file" name="" id="">
+                          <br>
+                          <b><label for="">password</label></b>
+                          <input type="password" name="" placeholder="Secret" id="">
+                          <br>
+                          <b><label for="">email</label></b>
+                          <input type="email" name="" id="e" required>
+                          <br>
+                          <b><label for="">range</label></b>
+                          <input type="range" name="" min="1" max="10">
+                          <br>
+                          <b><label for="">tel</label></b>
+                          <input type="tel" name="" placeholder="Solo números" id="">
+                          <br>
+                          <b><label for="">url</label></b>
+                          <input type="url" name="" placeholder="Agregar links" id="">
+                          <br>
+          
+                          <textarea name="" id="" cols="30" rows="5"></textarea>
+          
+                          <br>
+                          <b>
+                          <button type="submit">
+                              enviar
+                          </button>
+                          <input type="submit" value="Cancel"> </b>
+                    </fieldset>
+          
+                </form>
+    </section>
+
+    <section id="sv">
+        <h2>¿Que más puedes agregar?</h2>
+        
+        <h3><i>VIDEOS</i></h3>
+
+        <div class="galeria">
+            <VIdeo src="IMG_2473.MOV" width="75%" controls>
+                <source src="IMG_2473.mp4" type="video/mp4">
+            </VIdeo>
+            <div class="a"><b> Ottawa 67's </b></div>
+        </div>
+    </section>
+
+    <section id="si">
+
+    </section>
+</body>
+</html>
