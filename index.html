@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta author="Karla">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+   <br>
+   <h1>Hola mundo</h1>
+   <br>
+   <h2>Aprendiendo a usar HTML</h2>
+
+    <img align=center src="DSC_0246.JPG" alt="parc" >
+
+    <br>
+    <div id="Exp">
+    <p>Esta imagen fue tomada en mi visita a <i>Canadá</i> en <b><a href="http://parcomega.ca/en/"> <ins>Parc Omega</ins></a></b>, un parque de un gran tamaño donde puedes convivir con los animales que hay,
+    alimentarlos e incluso tocarlos de <small><i>(pero solo los venados)</i></small> , los animales que puedes ver en este zafari son:</p>
+    
+    <li>Lobos blancos</li>
+    <li>Venado rojo</li>
+    <li>Zorro Blanco/Rojo</li>
+    <li>Bisonte</li>
+    <mark><li>Oso negro</li></mark>
+    <li>Moose</li>
+    <li>Entre otros...</li>
+    </div>
+
+    <br>
+    <q>Por que nada dura para siempre y nosotros dos sabemos que el corazon puede cambiar y es dificil sostener una vela en esta fría lluvia de Noviembre. 
+        <i>November rain - Guns N' Roses</i>
+    </q>
+
+    <br>
+    <table id="Tabla">
+        <caption>Animales Vistos</caption>
+        <thead>
+            <th>Nombre</th>
+            <th>Imagen</th>
+            <th>Descripción</th>
+        </thead>  
+        <tbody>
+            <tr>
+                <td>Karla</td>
+                <td>Dufour</td>
+                <td>Acosta</td>
+            </tr>
+            <tr>
+                <td rowspan="2">rowspan</td>
+                <td colspan="2">colspan</td>
+            </tr>
+            <tr>
+                <td colspan="1">hello</td>
+                <td>banana</td>
+            </tr>
+        </tbody>
+
+      <form action="enviar.php" method="post">
+          <fieldset>
+                <legend>Inputs test</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" value="hola" id="" readonly>
+                <input placeholder="escribe tu nombre aquí" id="nombre" type="text">
+                <br>
+                    <select name="" id="">
+                        <option value="uno"></option>
+                        <option value="#fff"></option>
+                    </select>
+                <br>
+                <label for="nacimiento">Fecha Nacimiento</label>
+                <input type="date" name="" id="nacimiento">
+                <br>
+                <label for="correo">checkbox</label>
+                <input type="checkbox" name="">
+                <br>
+                <label for="radio">gender</label>
+                <input type="radio" name="gender" id="female">
+                <input type="radio" name="gender" id="male">
+                <br>
+                <label for="file">file</label>
+                <input type="file" name="" id="">
+                <br>
+                <label for="">password</label>
+                <input type="password" name="" id="">
+                <br>
+                <label for="">email</label>
+                <input type="email" name="" id="e" required>
+                <br>
+                <label for="">range</label>
+                <input type="range" name="" min="1" max="10">
+                <br>
+                <label for="">tel</label>
+                <input type="tel" name="" id="">
+                <br>
+                <label for="">url</label>
+                <input type="url" name="" id="">
+                <br>
+
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+
+                <br>
+                <button type="submit" id="hola">
+                    <h1>Hola</h1>
+                </button>
+                <br>
+                <button type="submit">
+                    enviar
+                </button>
+                <input type="submit" value="Cancel">
+          </fieldset>
+
+      </form>
+</body>
+</html>
