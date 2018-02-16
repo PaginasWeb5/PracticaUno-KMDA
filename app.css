@@ -1,7 +1,7 @@
 
 #Tabla{
     border-collapse: collapse;
-    width: 100%;
+    width: 30%;
 }
 table,tr,th,td{
     border:1px  solid black;

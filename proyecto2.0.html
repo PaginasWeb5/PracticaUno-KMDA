@@ -10,18 +10,18 @@
 </head>
 <body>
 
-    <div id="Head">
+    <div class="Head">
     <b>
         <h1>HTML & CSS</h1>
     </b>
     </div>
 
     <br>
-    <section id="Sint">
+    <section class="Sint">
         <h2>Sintaxis & Reglas</h2>
         <p>Para poder empezar a realizar un código es importante saber las partes en la que se componen. Primero se analiza la primera parte.</p>
         <br>
-        <img src="2018-02-14 (4).png" alt="" align=center>
+        <img src="C:\Users\mimed\Documents\Imagenes\2018-02-14 (4).png" alt="" align=center>
         <p>Una vez creado el archivo se escribe DOCTYPE donde aparecera todo lo que aparece en la imagen. </p>
         <ul>
             <li>DODCTYPE.- La función de DOCTYPE es especificarque tipo de lenguaje se va a utilizar en el documento.</li>
@@ -101,7 +101,7 @@
         <p>La sintaxis para agregar estilo a la pagina es muy sencillo ya que simplemente tienes que escribir lo que quieres modificar,
             pero esto se basa por modulos. Aquí una imagen de como sería la sintaxis:
         </p>
-        <img src="selector.gif" alt="sintaxis">
+        <img src="C:\Users\mimed\Documents\Imagenes\selector.gif" alt="sintaxis">
         <ul>
             <li>Se selecciona el punto de HTML que se quiere modificar.</li>
             <li>Los bloques contienen una o más declaraciones separadas por semicolumnas.</li>
@@ -111,6 +111,86 @@
         <p>Existen muchas propiedad y elementos tanto en HTML y CSS algunas son iguales y otras no, pero si sabes para que funcionan 
             no habra problema.
         </p>
+    </div>
+</section>
+
+<br>
+<section class="tt">
+    <div id="tabla">
+        <h3>Realizar tablas en HTML</h3>
+        <p>El cuerpo de las tablas es muy similar a un código en HTML, ya que ambas tienen un head y body, en este caso, head serían las columnas
+            y el body el contenido.
+        </p>
+        <p>La estructura y elementos que pueden incluir una tabla son:</p>
+        <ul>
+            <li>TABLE.- Crear tabla</li>
+            <li>CAPTION.- Nombre de la tabla</li>
+            <li>THEAD.- Encabezado de la tabla</li>
+            <li>TBODY.- Cuerpo de la tabla</li>
+            <li>TH.- Número de columnas</li>
+            <li>TR.- Renglones</li>
+            <li>TD.- Fila</li>
+            <li>COLSPAN.- Combina columnas</li>
+            <li>ROWSPAN.- Combina filas</li>
+        </ul>
+        <p>Como se apreciar en la imagen de abajo, es el resultado del código.</p>
+        <img src="C:\Users\mimed\Documents\Imagenes\2018-02-15 (8).png">
+    </div>
+</section>
+
+<div id="Imgas">
+        <img src="C:\Users\mimed\Documents\Imagenes\2018-02-15 (7).png" alt="">
+    </div>
+
+<section class="Type">
+    <div id="type">
+        <h3>Forms e Inputs type</h3>
+            <ul>
+                <li>FORM.- Es utilizado para colectar o agregar dentro de el input type.</li>
+                <li>INPUT.- Es el elemneto más importante ya que puede ser usado de diferentes maneras.</li>
+            </ul>
+            <p>Atributos que se pueden utilizar en type:</p>
+            <table class="TableType">
+                <thead>
+                    <b>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Sintaxis</th>
+                    </b>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Color</td>
+                        <td>Te permite seleccionar el color</td>
+                        <td><img src="C:\Users\mimed\Documents\Imagenes\2018-02-16.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>Despliega un calendario.</td>
+                        <td><img src="C:\Users\mimed\Documents\Imagenes\2018-02-16 (1).png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Datetime-local</td>
+                        <td>Permite agregar junto con el calendario una hora.</td>
+                        <td><img src="C:\Users\mimed\Documents\Imagenes\2018-02-16 (2).png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Permite ingresar correos (al momento de ingrear un @ automaticamente lo detecta)</td>
+                        <td><img src="C:\Users\mimed\Documents\Imagenes\2018-02-16 (3).png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Month</td>
+                        <td>Igual al Date pero este solo recibe mes y año.</td>
+                        <td><img src="C:\Users\mimed\Documents\Imagenes\2018-02-16 (4).png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Numero</td>
+                        <td>Define numeros, pero también puede tener resticciones.</td>
+                        <td><img src="C:\Users\mimed\Documents\Imagenes\2018-02-16 (5).png" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
 </section>
 
@@ -169,23 +249,61 @@
                     </fieldset>
           
                 </form>
+            <p>
+                Este form contiene otros atributos que pueden ser cajas de texto, rango, contraseña, ingresar un url,
+                seleccionar un archivo, combobox, e incluso un cuadro de texto modificable. Todo se maneja con la misma
+                sintaxis empezando con un Input tipo Type.
+            </p>
+            <p >
+                Su opción llamada <b>"placeholder"</b> permite agregar texto por default dentro de la caja, sea cual sea su
+                atributo. Tambien se pueden agregar checkbox, radiobutons y botones.
+            </p>
+            <p>
+                Estos formularios son enfocados más en el llenado de datos. Registrar una persona vía web o crear
+                sitios de ese tipo. Algunos atributos que se le puede dar a las cajas de texto es impedir
+                la escritura en el mismo, aplicando un valor llamado <i>readonly</i> su mismo nombre lo dice
+                solo es de lectura, o, un <em>disabled</em> el cual no permite la escritura y está bloqueado,
+                se le puede dar un <em>size</em> a la caja de texto, <i>maxlenght</i> que es el número maximo de
+                caracteres permitidos. Incluso un <i>autocompletar</i> para rellenar con valor ya predefinidos
+                previamente.
+            </p>
     </section>
-
-    <section id="sv">
-        <h2>¿Que más puedes agregar?</h2>
-        
-        <h3><i>VIDEOS</i></h3>
-
+  
+    <br>
+    <h2>¿Que más puedes agregar?</h2>
+<section class="Aj">
+    <div class="responsivo"> 
         <div class="galeria">
-            <VIdeo src="IMG_2473.MOV" width="75%" controls>
-                <source src="IMG_2473.mp4" type="video/mp4">
+            <h3><i>VIDEOS</i></h3>
+            <VIdeo src="C:\Users\mimed\Documents\Imagenes\IMG_2473.MOV" width="70%" controls>
+                <source src="C:\Users\mimed\Documents\Imagenes\IMG_2473.mp4" type="video/mp4">
             </VIdeo>
             <div class="a"><b> Ottawa 67's </b></div>
         </div>
-    </section>
+    </div>
 
-    <section id="si">
+    <div class="responsivo">
+        <div class="galeria">
+            <h3><i>IMAGENES</i></h3>
+            <a target="_blank" href="C:\Users\mimed\Documents\Imagenes\DSC_0328 (1).JPG">
+                <img src="C:\Users\mimed\Documents\Imagenes\DSC_0328 (1).JPG" width="70%" alt="">
+            </a>
+            <div class="a"><b>Bisontes en Park Omega </b></div>
+        </div>
+    </div>
+</section>
+    <div class="clear"></div>
 
-    </section>
+    <br>
+    <section class="finale">
+    <div class="quote">
+        <cite>
+            Para más información sobre HTML & CSS, consulte la página <a href="https://www.w3schools.com/default.asp">
+            <big>en el siguiente link vinculado</big></a> donde podrás encontrar más información sobre estos 
+            lenguajes.
+        </cite>
+    </div>
+
+</section>
 </body>
 </html>
