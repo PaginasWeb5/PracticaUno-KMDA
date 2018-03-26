@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ActP2.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="text-head">
+                <a href="#" id="hola" class="btn btn-default">Noticias</a>
+                <a href="#" id="otro" class="btn btn-default">Animacion</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="modal" class="modal" style="display: none">
+        <div class="modal-header">
+            <h2>Formulario</h2>
+        </div>
+    </div>
+
+    <div class="news"></div>
+
+    <div class="animacion" style="display:none">
+        <h1>HELLO</h1>
+    </div>
+
+    <script>
+        /*function ShowModali() {
+            var modal = document.getElementById('modal');
+
+            if (modal.style.display === "none") {
+                modal.style.display = "block";
+            } else {
+                modal.style.display = "none";
+            }
+        }*/
+        $(document).ready(function () {
+            $("#hola").click(function () {
+
+                //var modalTitle = $('');
+                //var modalHeader = $('.modal-header');
+                //modal.show();
+                //modalHeader.html('<h2> Cargando Noticias </h2>')
+
+                $.ajax({
+                    url: "https://newsapi.org/v2/top-headlines?country=ca&category=technology&apiKey=fe9fb99d466a49f38efee2f72021c995",
+                    success: function (result) {
+                        /*modal.hide();*/
+                        $('header').hide('slow');
+                        console.log(result);
+                        var articles = result.articles;
+                        articles.forEach(article => {
+
+                            $('.news').append(
+                                '<div class="article"> <div class="bg" style="background-image: linear-gradient(to top, rgba(23, 165, 35, 0.521), rgba(199, 77, 162, 0.575)), url(' + article.urlToImage + ')"></div> <h1><a href="' +
+                                article.url + '">' + article.title + '</a></h1> </div>'
+                            );
+                        });
+                    }, error: function (e) {
+                        console.log(e);
+                    }
+                });
+            });
+
+            $('#otro').click(function () {
+                $('header').hide('slow', function () {
+                    $('.animacion').fadeIn();                   
+                    $('.animacion h1').animate({ 
+                        right: '500px'
+                    });
+                });
+
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>

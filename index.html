@@ -11,10 +11,11 @@
 <body>
 
    <br>
+<div id="k">
    <h1>Hola mundo</h1>
    <br>
    <h2>Aprendiendo a usar HTML</h2>
-
+</div>
     <img align=center src="C:\Users\mimed\Documents\Imagenes\DSC_0246.JPG" alt="parc" >
 
     <br>
@@ -115,5 +116,42 @@
           </fieldset>
 
       </form>
+    
+      <input type="text" id="valor_uno">
+      <select id="operador">
+          <option value="suma">suma</option>
+          <option value="resta">resta</option>
+          <option value="mult">multiplicar</option>
+      </select>
+      <input type="text" id="valor_dos">
+      <h1 id="resultado"></h1>
+      <p>Tu resultado es <b id="cambio">0</b></p>
+
+      <button onclick="Calcular();">Calcular</button>
+
+      <script>
+          function Calcular(){
+              var v1, v2, op, res;
+              v1 = document.getElementById('valor_uno').value;
+              v2 = document.getElementById('valor_dos').value;
+              op = document.getElementById('operador').value;
+              
+              switch(op){
+                case 'suma': 
+                    res = Number(v1) + Number (v2);
+                break;
+                case 'resta':
+                    res = Number(v1) - Number(v2);
+                break;
+                case 'mult':
+                    res = Number(v1) * Number (v2);
+                break;
+              }
+            
+            document.getElementById('cambio').innerHTML = res;       
+              
+          }
+      </script>
+
 </body>
 </html>
