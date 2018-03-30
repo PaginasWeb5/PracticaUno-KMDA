@@ -1,0 +1,54 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+.PP{
+    background-image: url("C:/Users/mimed/Documents/Imagenes/DSC_0324(1).JPG");
+    background-size: 100% 100%;
+    height: 680px;
+    width: 100%;
+    background-attachment: scroll;
+} 
+.a{
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: nowrap;
+}
+.b{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+.b img:hover{
+    box-shadow: 0 0 10px 4px gray;
+}
+.b img{
+    border-radius: 200px 200px 200px 200px;
+    box-shadow: 0 0 7px 3px gray;
+    margin: auto;
+    display: block;
+}     
+/* header{
+    width: 100%;
+    height: 100%;
+} */
+/* .encabezado{
+    text-align: center;
+} */
+.encabezado .BotonD{
+    border-radius: 6px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-shadow: 0 0 7px 3px gray;
+    color: cornflowerblue;
+}
+.encabezado .BotonD:hover{
+    box-shadow: 0 0 15px 4px gray;
+}
+
+.Parte1{
+    width: 100%;
+    height: 680px;
+}

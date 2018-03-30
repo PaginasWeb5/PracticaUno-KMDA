@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,45 @@
     <meta author="Karla">
     <link rel="stylesheet" href="app.css">
 </head>
+
 <body>
 
-   <br>
-<div id="k">
-   <h1>Hola mundo</h1>
-   <br>
-   <h2>Aprendiendo a usar HTML</h2>
-</div>
-    <img align=center src="C:\Users\mimed\Documents\Imagenes\DSC_0246.JPG" alt="parc" >
+    <br>
+    <div id="k">
+        <h1>Hola mundo</h1>
+        <br>
+        <h2>Aprendiendo a usar HTML</h2>
+    </div>
+    <img align=center src="C:\Users\mimed\Documents\Imagenes\DSC_0246.JPG" alt="parc">
 
     <br>
     <div id="Exp">
-    <p>Esta imagen fue tomada en mi visita a <i>Canadá</i> en <b><a href="http://parcomega.ca/en/"> <ins>Parc Omega</ins></a></b>, un parque de un gran tamaño donde puedes convivir con los animales que hay,
-    alimentarlos e incluso tocarlos de <small><i>(pero solo los venados)</i></small> , los animales que puedes ver en este zafari son:</p>
-    
-    <li>Lobos blancos</li>
-    <li>Venado rojo</li>
-    <li>Zorro Blanco/Rojo</li>
-    <li>Bisonte</li>
-    <mark><li>Oso negro</li></mark>
-    <li>Moose</li>
-    <li>Entre otros...</li>
+        <p>Esta imagen fue tomada en mi visita a
+            <i>Canadá</i> en
+            <b>
+                <a href="http://parcomega.ca/en/">
+                    <ins>Parc Omega</ins>
+                </a>
+            </b>, un parque de un gran tamaño donde puedes convivir con los animales que hay, alimentarlos e incluso tocarlos
+            de
+            <small>
+                <i>(pero solo los venados)</i>
+            </small> , los animales que puedes ver en este zafari son:</p>
+
+        <li>Lobos blancos</li>
+        <li>Venado rojo</li>
+        <li>Zorro Blanco/Rojo</li>
+        <li>Bisonte</li>
+        <mark>
+            <li>Oso negro</li>
+        </mark>
+        <li>Moose</li>
+        <li>Entre otros...</li>
     </div>
 
     <br>
-    <q>Por que nada dura para siempre y nosotros dos sabemos que el corazon puede cambiar y es dificil sostener una vela en esta fría lluvia de Noviembre. 
+    <q>Por que nada dura para siempre y nosotros dos sabemos que el corazon puede cambiar y es dificil sostener una vela en
+        esta fría lluvia de Noviembre.
         <i>November rain - Guns N' Roses</i>
     </q>
 
@@ -44,7 +58,7 @@
             <th>Nombre</th>
             <th>Paterno</th>
             <th>Materno</th>
-        </thead>  
+        </thead>
         <tbody>
             <tr>
                 <td>Karla</td>
@@ -61,17 +75,17 @@
             </tr>
         </tbody>
 
-      <form action="enviar.php" method="post">
-          <fieldset>
+        <form action="enviar.php" method="post">
+            <fieldset>
                 <legend>Inputs test</legend>
                 <label for="nombre">Nombre</label>
                 <input type="text" value="hola" id="" readonly>
                 <input placeholder="escribe tu nombre aquí" id="nombre" type="text">
                 <br>
-                    <select name="" id="">
-                        <option value="uno"></option>
-                        <option value="#fff"></option>
-                    </select>
+                <select name="" id="">
+                    <option value="uno"></option>
+                    <option value="#fff"></option>
+                </select>
                 <br>
                 <label for="nacimiento">Fecha Nacimiento</label>
                 <input type="date" name="" id="nacimiento">
@@ -113,45 +127,48 @@
                     enviar
                 </button>
                 <input type="submit" value="Cancel">
-          </fieldset>
+            </fieldset>
 
-      </form>
-    
-      <input type="text" id="valor_uno">
-      <select id="operador">
-          <option value="suma">suma</option>
-          <option value="resta">resta</option>
-          <option value="mult">multiplicar</option>
-      </select>
-      <input type="text" id="valor_dos">
-      <h1 id="resultado"></h1>
-      <p>Tu resultado es <b id="cambio">0</b></p>
+        </form>
 
-      <button onclick="Calcular();">Calcular</button>
+        <input type="text" id="valor_uno">
+        <select id="operador">
+            <option value="suma">suma</option>
+            <option value="resta">resta</option>
+            <option value="mult">multiplicar</option>
+        </select>
+        <input type="text" id="valor_dos">
+        <h1 id="resultado"></h1>
+        <p>Tu resultado es
+            <b id="cambio">0</b>
+        </p>
 
-      <script>
-          function Calcular(){
-              var v1, v2, op, res;
-              v1 = document.getElementById('valor_uno').value;
-              v2 = document.getElementById('valor_dos').value;
-              op = document.getElementById('operador').value;
-              
-              switch(op){
-                case 'suma': 
-                    res = Number(v1) + Number (v2);
-                break;
-                case 'resta':
-                    res = Number(v1) - Number(v2);
-                break;
-                case 'mult':
-                    res = Number(v1) * Number (v2);
-                break;
-              }
-            
-            document.getElementById('cambio').innerHTML = res;       
-              
-          }
-      </script>
+        <button onclick="Calcular();">Calcular</button>
+
+        <script>
+            function Calcular() {
+                var v1, v2, op, res;
+                v1 = document.getElementById('valor_uno').value;
+                v2 = document.getElementById('valor_dos').value;
+                op = document.getElementById('operador').value;
+
+                switch (op) {
+                    case 'suma':
+                        res = Number(v1) + Number(v2);
+                        break;
+                    case 'resta':
+                        res = Number(v1) - Number(v2);
+                        break;
+                    case 'mult':
+                        res = Number(v1) * Number(v2);
+                        break;
+                }
+
+                document.getElementById('cambio').innerHTML = res;
+
+            }
+        </script>
 
 </body>
+
 </html>
