@@ -16,13 +16,17 @@
         <header>
             <div class="a">
                 <div class="b">
-                    <img src="C:\Users\mimed\Documents\Imagenes\boton1.png" alt="">
+                    <a href="https://freebiesbug.com/psd-freebies/crios-free-psd-website-template/">
+                            <img src="C:\Users\mimed\Documents\Imagenes\boton1.png" alt="">
+                    </a>
                 </div>
                 <div class="b">
                     <img src="" alt="">
                 </div>
                 <div class="b">
-                    <img src="C:\Users\mimed\Documents\Imagenes\boton2.png" alt="">
+                    <a href="https://www.google.com.mx/">
+                        <img src="C:\Users\mimed\Documents\Imagenes\boton2.png" alt="">
+                    </a>
                 </div>
             </div>
         </header>
@@ -37,28 +41,98 @@
     </div>
 
     <div class="Parte1" style="display:none">
-        <h6>Secciones</h6>
-        <h1>Este es un preview de las secciones que veras a continuacion</h1>
+        <h6 style="display:none">Secciones</h6>
+        <h1 style="display:none">Este es un preview de las secciones que veras a continuacion</h1>
         <div class="PA">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="a1">
+                <img src="C:\Users\mimed\Documents\Imagenes\snowflake.jpg" alt="">
+                <h2>Texto 1</h2>
+                <h6>Subtitulo</h6>
+            </div>
+            <div class="a2">
+                <img src="C:\Users\mimed\Documents\Imagenes\flor.jpg" alt="">
+                <h2>Texto 1</h2>
+                <h6>Subtitulo</h6>
+            </div>
+            <div class="a3">
+                <img src="C:\Users\mimed\Documents\Imagenes\Esfera.jpg" alt="">
+                <h2>Texto 1</h2>
+                <h6>Subtitulo</h6>
+            </div>
+            <div class="a4">
+                <img src="C:\Users\mimed\Documents\Imagenes\decal.jpg" alt="">
+                <h2>Texto 1</h2>
+                <h6>Subtitulo</h6>
+            </div>
         </div>
     </div>
 
+    <div class="Paneles" style="display:none">
+        <div class="Panel1">
+            <div class="img1"></div>
+            <div class="info1">
+                <h5>Galletas</h5>
+                <h6>Inserte texto aquí</h6>
+            </div>
+        </div>
+        <div class="Panel2">
+            <div class="info2">
+                <h5>Venado</h5>
+                <h6>Inserte texto aquí</h6>
+            </div>
+            <div class="img2"></div>
+        </div>
+        <div class="Panel3">
+            <div class="img3"></div>
+            <div class="info3">
+                <h5>Bisontes</h5>
+                <h6>Inserte texto aquí</h6>
+            </div>
+        </div>
+        <div class="Panel4">
+            <div class="info4">
+                <h5>Parque</h5>
+                <h6>Inserte texto aquí</h6>
+            </div>
+            <div class="img4"></div>
+        </div>
+    </div>
+
+    <footer style="display:none">
+        <h4>Aplican restricciones</h4>
+    </footer>
+
     <script>
         $(document).ready(function () {
+
+            $('.encabezado h1').animate({
+                right: '500px'
+            });
+
             $('.BotonD').click(function () {
-                $('.Parte1').show('slow', function () {
-                    $('html, body').animate({
-                        scrollTop: $('.Parte1').offset().top
-                    }, '800');
-                    /*$('.Parte1 h6, h1').animate({
-                        right: '500px'
-                        
-                    });*/
+                $('.Parte1, .Paneles, footer').show('slow', function () {
+                    $('html, body').animate({ scrollTop: $('.Parte1, .Paneles, footer').offset().top}, 300, function () {
+                        $('.Parte1 h1, .Parte1 h6').fadeIn();
+                        /*$('.Parte1 h6,.Parte1 h1').animate({
+                             right: '500px',
+                             color: 'red'
+                         });*/
+                        //alert('hola');
+                    });
                 });
+            });
+
+            $('.Parte1 .a1').click(function(){
+                $('html, body').animate({scrollTop:$('.Paneles .Panel1').offset().top},300)
+            });
+            $('.Parte1 .a2').click(function(){
+                $('html, body').animate({scrollTop:$('.Paneles .Panel2').offset().top},300)
+            });
+            $('.Parte1 .a3').click(function(){
+                $('html, body').animate({scrollTop:$('.Paneles .Panel3').offset().top},300)
+            });
+            $('.Parte1 .a4').click(function(){
+                $('html, body').animate({scrollTop:$('.Paneles .Panel4').offset().top},300)
             });
         });
     </script>

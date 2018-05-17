@@ -1,14 +1,26 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    
+    padding: 0;
+    margin: 0;
 }
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: peachpuff;
+}
+
+/*1RA SECCION*/
 .PP{
     background-image: url("C:/Users/mimed/Documents/Imagenes/DSC_0324(1).JPG");
     background-size: 100% 100%;
-    height: 680px;
+    height: 100vh;
     width: 100%;
     background-attachment: scroll;
+    margin: 0;
 } 
 .a{
     display: flex;
@@ -48,7 +60,100 @@ body{
     box-shadow: 0 0 15px 4px gray;
 }
 
+/*2DA SECCION*/
 .Parte1{
     width: 100%;
-    height: 680px;
+    height: 50%;
+    /*background-color: lightgoldenrodyellow;*/
+}
+.Parte1 h1, h6{
+    display:none;
+}
+.Parte1 .PA img{
+    border-radius: 200px 200px 200px 200px;
+    box-shadow: 0 0 7px 3px gray;
+    margin: auto;
+    display: block;
+}
+.Parte1 .PA{ 
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: nowrap;
+}
+.Parte1 .PA .a1, .a2, .a3, .a4 {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.Parte1 .PA img:hover{
+    box-shadow: 0 0 10px 4px gray;
+}
+.Parte1 .PA h2{
+    color: lightskyblue;
+}
+
+/*3RA SECCION*/
+.Paneles{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Paneles .Panel1, .Panel2, .Panel3, .Panel4{
+    width: 100%;
+    height: 340px;
+    display: flex;
+    flex-wrap: nowrap;
+    background-attachment: fixed;
+}
+
+.Paneles .Panel1:hover .img1,
+.Paneles .Panel2:hover .img2,
+.Paneles .Panel3:hover .img3,
+.Paneles .Panel4:hover .img4{
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+    display: block;
+}
+
+.Paneles .img1, .img2, .img3, .img4{
+    background-size: 100% 100%;
+    height: 100%;
+    width: 50%;
+}
+.Paneles .img1, .img3{
+    float: right;
+}
+.Paneles .img2, .img4{
+    float: left; 
+}
+
+.Paneles .Panel1 .img1{
+    background-image: url('C:/Users/mimed/Documents/Imagenes/DSC_0096.JPG');
+}
+.Paneles .Panel2 .img2{
+    background-image: url('C:/Users/mimed/Documents/Imagenes/DSC_0257.JPG');
+}
+.Paneles .Panel3 .img3{
+    background-image: url('C:/Users/mimed/Documents/Imagenes/DSC_0328 (1).JPG'); 
+}
+.Paneles .Panel4 .img4{
+    background-image: url('C:/Users/mimed/Documents/Imagenes/DSC_0246.JPG');
+}
+
+.Paneles .info1, .info2, .info3, .info4{
+    width: 50%;
+    height: 50%;
+}
+.Paneles  .info1, .info3{
+    float: left;
+}
+.Paneles .info2, .info4{
+    float: right;
+}
+
+.Paneles .Panel1, .Panel2, .Panel3, .Panel4 h5{
+    color: lightskyblue;
+}
+.Paneles .Panel1, .Panel2, .Panel3, .Panel4 h6{
+    color: lightslategray;
 }
